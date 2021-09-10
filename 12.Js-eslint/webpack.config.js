@@ -1,8 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolve } = require("path");
 
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizerCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin")
 
 // node.jsの環境変数を設定
 // process.env.NODE_ENV = 'development'
@@ -45,11 +43,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-    }),
-    new MiniCssExtractPlugin({
-      filename: "css/built.css",
-    }),
-    new OptimizerCssAssetsWebpackPlugin()
+    })
   ],
   mode: "development",
 };
