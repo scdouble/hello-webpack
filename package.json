@@ -36,7 +36,8 @@
     "babel-loader": "^8.0.6",
     "@babel/core": "^7.8.4",
     "@babel/polyfill": "^7.8.3",
-    "core-js": "^3.6.4"
+    "core-js": "^3.6.4",
+    "workbox-webpack-plugin": "^5.0.0"
   },
   "browserslist": {
     "development": [
@@ -51,7 +52,10 @@
     ]
   },
   "eslintConfig": {
-    "extends": "airbnb-base"
+    "extends": "airbnb-base",
+    "env":{
+      "browser":true
+    }
   },
   "sideEffects": [
     "*.css"
