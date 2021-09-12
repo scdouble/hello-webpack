@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
   "devDependencies": {
     "@webpack-cli/serve": "^1.5.2",
     "css-loader": "^3.4.2",
@@ -50,5 +53,7 @@
   "eslintConfig": {
     "extends": "airbnb-base"
   },
-  "sideEffects":["*.css"]
+  "sideEffects": [
+    "*.css"
+  ]
 }
