@@ -3,9 +3,16 @@
 * Production
 
 ## Developmentの最適化
-* BundleのスピードUP --> HMR
-* ソースのチューニング　--> ソースマップ
+* BundleのスピードUP
+  * HMR
+* ソースコードのデバッグ
+  * source-map
 
 ## Productionの最適化
 * BundleのスピードUP
+  * oneOf
+  * Cache
+    * babel
+    * 
 * ソースの性能の最適化
+  * Cache(hash-chunckhash-contenthash)
